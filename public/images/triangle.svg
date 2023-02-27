@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="shapes" viewBox="0 0 100 100">
+  <rect x="0" y="0" fill-rule="evenodd" width="200" height="100" fill="transparent" style="fill: var(--color-shape-rectangle, transparent)"></rect>
+  <circle cx="50" cy="50" r="50" fill-rule="evenodd" fill="transparent" style="fill: var(--color-shape-circle, transparent)"></circle>
+  <polygon fill-rule="evenodd" points="20.643 90 2.5 34.377 50 0 97.5 34.377 79.357 90" fill="transparent" style="fill: var(--color-shape-pentagon, transparent)"></polygon>
+  <polygon points="50 0 100 100 0 100" fill="transparent" style="fill: var(--color-shape-triangle, transparent)"></polygon>
+  <path d="M100,50 C100,77.6142375 77.6142375,100 50,100 C22.3857625,100 0,77.6142375 0,50 L0,50 Z" fill="transparent" style="fill: var(--color-shape-half_circle, transparent)"></path>
+</svg>

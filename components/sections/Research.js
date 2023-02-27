@@ -11,7 +11,7 @@ const Research = () => {
             </div>
             <div className="grid grid-cols-2 gap-5 pt-10">
                 <Card1 image={img21} title="Reasearch & Art" className={""} paragraph={"Our research focuses on seven key areas combining four core competences in the fields of ICT, materials, arts, design and business together with three grand challenges related to energy, living environment, and health."} />
-                <Card1 image={img22} title="Reasearch & Art" className={""} paragraph={"Our research focuses on seven key areas combining four core competences in the fields of ICT, materials, arts, design and business together with three grand challenges related to energy, living environment, and health."} />
+                <Card1 image={img22} title="Give for the future" className={""} paragraph={"Join us in building a sustainable future! Together we can solve some of the toughest problems of our time."} />
             </div>
         </div>
      );

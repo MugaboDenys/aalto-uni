@@ -9,7 +9,7 @@ const Hero = () => {
     return ( 
         
         <div className="relative">
-            <div className="h-[30rem] overflow-clip">
+            <div className="h-[40rem] overflow-clip">
                 <Image alt="" src={img1} className="w-full" />
             </div>
             <div className="bg-black text-white absolute left-28 -bottom-10 w-[40rem] py-7 px-10">
