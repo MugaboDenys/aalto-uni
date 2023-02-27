@@ -7,8 +7,9 @@ import {BsGlobe2, BsHeart, BsSearch} from "react-icons/bs"
 import Button from "../ui/Button";
 
 const Navbar = () => {
+    
     return ( 
-        <div className="md:px-20 px-5 md:py-5 py-2 border-b-2 bg-gray1 flex items-center fixed w-full z-40">
+        <div className="md:px-20 px-5 md:py-5 py-2 border-b-2 bg-gray1 flex items-center md:fixed w-full z-40">
             <Link href={'/'} >
                 <Image alt="" src={logo} className="md:h-20 h-7 w-auto"/>
             </Link>

@@ -80,11 +80,11 @@ const Explorer = () => {
                     
                 </div>
             </div>
-            <div className="pt-10 px-32">
+            <div className="pt-10 md:px-32 px-5">
                 <BigCard image={img13} title={"Campus - lively and thriving"}  link={linksArr} paragraph="Aalto University's campus in Otaniemi is a renewable and living environment for research, art, learning, entrepreneurship and housing. The campus area inspires people to collaborate, try out new ideas and innovate together." />
                 <BigCard className={"flex-row-reverse pt-10"} image={img14} link="Visit the tour" title={"Virtual Campus Experience"}  paragraph="Explore Aalto University’s campus from anywhere in the world! Our digital guides, an Aalto University student and an assistant professor, introduce you to our learning facilities, laboratories, workshops, service spots and outdoor spaces. The tour can be experienced on desktop, mobile or VR headset. " />
             </div>
-            <div className="px-32 pt-20 grid grid-cols-4 gap-6">
+            <div className="md:px-32 pt-20 grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-2">
                 {[{image : img15, text : "Building Finland's first quantum computer. Photo: Aalto University" },
                   {image : photo2, text : "Creative sustainability. Photo: Aalto University / Mikko Raskinen." },
                   {image : photo3, text : "Architectural gems of Otaniemi. Photo: Aalto University / Tuomas Uusheimo." },
@@ -97,13 +97,13 @@ const Explorer = () => {
                         <Card3 key={item} image={item.image} link={item.text} />
                     )}
             </div>
-            <div className="pt-32 px-44 text-white">
-                <h3 className="text-center text-3xl hover:pr-24">Community voices</h3>
-                <div className=" flex justify-between gap-20">
+            <div className="pt-32 md:px-44 text-white">
+                <h3 className="text-center text-3xl md:hover:pr-24 hover:pr-5">Community voices</h3>
+                <div className=" md:flex px-20 justify-between gap-20">
                     {[{img : img17, title : " Watch our videos "},{img : img18, title : "Read our blogs"}, {img : img16, title : "Listen to podcasts"}].map(item =>{
                         return(
                             <Link key={item} href={'/'} className="group flex items-center gap-5 pt-5" >
-                                <Image alt="" src={item.img} className="w-20 rounded-full group-hover:opacity-70 duration-200"/> <span className="group-hover:bg-neutral-700 duration-200 text-lg">{item.title}</span>
+                                <Image alt="" src={item.img} className="w-20 rounded-full group-hover:opacity-70 duration-200"/> <span className="group-hover:bg-neutral-700 duration-200 md:text-lg">{item.title}</span>
                             </Link>
                         )
                     })}
