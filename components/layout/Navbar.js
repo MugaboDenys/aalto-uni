@@ -5,13 +5,22 @@ import Image from "next/image";
 import {BiLockAlt, } from "react-icons/bi"
 import {BsGlobe2, BsHeart, BsSearch} from "react-icons/bs"
 import Button from "../ui/Button";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+    const [animateNav, setAnimateNav] = useState(false);
     
+    useEffect (()=>{
+        const listen = ()=>{
+            window.scrollY > 50 ? setAnimateNav(true) : setAnimateNav(false)
+        }
+        window.addEventListener('scroll', listen);
+        return (window.addEventListener('scroll', listen))
+    }, []);
     return ( 
-        <div className="md:px-20 px-5 md:py-5 py-2 border-b-2 bg-gray1 flex items-center md:fixed w-full z-40">
-            <Link href={'/'} >
-                <Image alt="" src={logo} className="md:h-20 h-7 w-auto"/>
+        <div className={`md:px-20 px-5 ${animateNav ? "md:py-1" : "md:py-5"} ease-in duration-300  py-2 border-b-2 bg-gray1 flex items-center md:fixed w-full z-40`}>
+            <Link href={'/'} > 
+                <Image alt="" src={logo} className={` ${animateNav ? "md:h-7 h-7" : "md:h-20 h-7"} ease-in duration-300 w-auto`}/>
             </Link>
             <div className="md:flex hidden ml-auto">
                 {["For Personal", "Support Us","EN", "Search", "Menu"].map((item, index)=>{
@@ -30,6 +39,7 @@ const Navbar = () => {
             </div>
             <Button name={"Login"} link="/" className={"hidden md:block bg-white"} />
         </div>
+        
      );
 }
  
