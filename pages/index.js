@@ -5,6 +5,9 @@ import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/sections/Hero'
 import Spotlight from '@/components/sections/Spotlight'
+import Explorer from '@/components/sections/Explorer'
+import Studies from '@/components/sections/Studies'
+import Information from '@/components/sections/Information'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,10 +22,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-gray2">
-      <Navbar/>
-      <Hero/>
-      <Spotlight className={"bg-gray1"} styles="border" mainTitle={"Spotlight "} btnName="See all aalto University news"/>
-      <Spotlight className={"bg-gray2"} mainTitle={"Join our many events"}  btnName="See all events" />
+        <Navbar/>
+        <Hero/>
+        <Spotlight className={"bg-gray1"} styles="border" mainTitle={"Spotlight "} btnName="See all aalto University news"/>
+        <Spotlight className={"bg-gray2"} mainTitle={"Join our many events"}  btnName="See all events" />
+        <Explorer />
+        <Studies />
+        <Information />
       </main>
     </>
   )
