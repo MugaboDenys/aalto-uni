@@ -21,7 +21,8 @@ export default function Home() {
       <main className="bg-gray2">
       <Navbar/>
       <Hero/>
-      <Spotlight/>
+      <Spotlight className={"bg-gray1"} styles="border" mainTitle={"Spotlight "} btnName="See all aalto University news"/>
+      <Spotlight className={"bg-gray2"} mainTitle={"Join our many events"}  btnName="See all events" />
       </main>
     </>
   )
