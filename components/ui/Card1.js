@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Card1 = ({image,title, paragraph, date, cat, className}) => {
     return ( 
-        <Link href={'/'} className={`block group  ${className} w-[432px] h-[368px] text-white bg-gray1`}>
+        <Link href={'/'} className={`block group  ${className} text-white bg-gray1 pb-5`}>
             <div>
             <Image alt="" src={image} className="group-hover:opacity-70 duration-300" />
             </div>

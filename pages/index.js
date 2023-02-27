@@ -8,6 +8,8 @@ import Spotlight from '@/components/sections/Spotlight'
 import Explorer from '@/components/sections/Explorer'
 import Studies from '@/components/sections/Studies'
 import Information from '@/components/sections/Information'
+import Research from '@/components/sections/Research'
+import Follow from '@/components/sections/Follow'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -29,6 +31,8 @@ export default function Home() {
         <Explorer />
         <Studies />
         <Information />
+        <Research />
+        <Follow />
       </main>
     </>
   )
