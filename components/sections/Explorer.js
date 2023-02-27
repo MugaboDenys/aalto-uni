@@ -34,39 +34,39 @@ const Explorer = () => {
             <div className="h-96 bg-red-500">
                 <Image alt="" src={img2} className="h-full object-cover object-center" />
             </div>
-            <div className="absolute max-w-6xl w-full left-52 top-[17.5rem] bg-blue1 h-72">
-                <div className="pl-20 py-14"> 
-                    <h1 className="text-7xl text-white font-semibold">Explore Aalto University</h1>
+            <div className="absolute md:max-w-6xl md:w-full w-[22rem] md:left-52 left-5 md:top-[17.5rem] top-[18.2rem] bg-blue1 md:h-72">
+                <div className="md:pl-20 pl-5 md:py-14 pt-5 pb-20"> 
+                    <h1 className="md:text-7xl text-3xl text-white font-semibold">Explore Aalto University</h1>
                 </div>
-                <div className="border-t text-white grid grid-cols-3 justify-items-center overflow-hidden">
-                    <div className="pt-10">
+                <div className="border-t text-white grid md:grid-cols-3 grid-cols-1 justify-items-center content-start overflow-hidden">
+                    <div className="md:pt-10 py-6 md:py-0">
                         <Link href={'/'} className="underline text-2xl hover:bg-white hover:text-black">Study at Aalto</Link>
                     </div>
-                    <div className="border-x px-20 py-9">
-                        <Link href={'/'} className="underline text-2xl hover:bg-white hover:text-black">Study at Aalto</Link>
+                    <div className="md:border-x border-y md:border-y-0 px-20 md:py-9 py-5">
+                        <Link href={'/'} className="underline text-2xl hover:bg-white hover:text-black">Open Positions</Link>
                     </div>
-                    <div className="pt-10">
-                        <Link href={'/'} className="underline text-2xl hover:bg-white hover:text-black">Study at Aalto</Link>
+                    <div className="md:pt-10 py-6 md:py-0">
+                        <Link href={'/'} className="underline text-2xl hover:bg-white hover:text-black">Contact Us</Link>
                     </div>
                 </div>
 
             </div>
-            <div className="pt-32 px-20 text-white">
-                <h3 className="text-center text-3xl hover:pr-24">Important quicklinks</h3>
-                <div className=" flex justify-center gap-20">
-                    {[{img : pen, title : "For personnel"},{img : folder, title : "For personnel"}, {img : phone, title : "For personnel"}].map(item =>{
+            <div className="md:pt-32 pt-64 md:px-20 text-white">
+                <h3 className="text-center md:text-3xl text-2xl md:hover:pr-24 hover:pr-5">Important quicklinks</h3>
+                <div className=" flex flex-col md:flex-row px-20 md:px-0 justify-center md:gap-20">
+                    {[{img : pen, title : "For personnel"},{img : folder, title : "Aalto HandBook"}, {img : phone, title : "Safety"}].map(item =>{
                         return(
                             <Link key={item} href={'/'} className="group flex items-center gap-5 pt-5" >
-                                <Image alt="" src={item.img} className="w-20 rounded-full group-hover:opacity-70 duration-200"/> <span className="group-hover:bg-neutral-700 duration-200 text-lg">{item.title}</span>
+                                <Image alt="" src={item.img} className="md:w-20 w-16 rounded-full group-hover:opacity-70 duration-200"/> <span className="group-hover:bg-neutral-700 duration-200 text-lg">{item.title}</span>
                             </Link>
                         )
                     })}
                 </div>
             </div>
-            <div className="text-white px-32 pt-20">
+            <div className="text-white md:px-32 px-5 pt-20">
                 <h3 className="text-2xl">Explorer Our Six Schools</h3>
-                <h4 className="text-lg">Scientific research and artistic activities are carried out at six schools and their departments and units.</h4>
-                <div className="grid grid-cols-2 gap-4 pt-10">
+                <h4 className="text-lg pt-5">Scientific research and artistic activities are carried out at six schools and their departments and units.</h4>
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-10">
                     {[
                         {image : img12, title : "School of Engineering", paragraph : "The School of Arts, Design and Architecture is one of the..." },
                         {image : img25, title : "School of Engineering", paragraph : "The School of Arts, Design and Architecture is one of the..." },

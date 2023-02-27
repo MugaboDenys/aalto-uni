@@ -7,13 +7,13 @@ import Button from "../ui/Button";
 const Spotlight = ({mainTitle,btnName, className, styles, img1, img2, img3}) => {
     return ( 
         
-        <div className={`${className} px-28 py-28 text-white`}>
-            <div className="relative">
+        <div className={`${className} md:px-28 px-5 md:py-28 pt-10 pb-28 relative text-white`}>
+            <div className="md:relative ">
                 <h2 className="text-3xl">{mainTitle}</h2>
                 <h3 className="text-lg pt-3">ind more current news and interesting events on the <span className="underline hover:bg-neutral-700 text-white">News and events page.</span></h3>
-                <Button name={btnName} link="/" className={"absolute text-sm hover:border-transparent right-0 bottom-10 border"} />
+                <Button name={btnName} link="/" className={"absolute text-sm hover:border-transparent md:right-0 md:bottom-10 bottom-14 border"} />
             </div>
-            <div className="grid grid-cols-3 gap-5 pt-5">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-5 pt-5">
                  <Card1 
                     image={img1}
                     title="Shrinking From the heat"
