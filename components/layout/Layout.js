@@ -1,7 +1,12 @@
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+
 const Layout = ({children}) => {
     return ( 
-        <div className="max-w-7xl mx-auto px-20">
+        <div className="">
+            <Navbar/>
             {children}
+            <Footer/>
         </div>
      );
 }

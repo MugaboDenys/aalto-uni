@@ -9,8 +9,8 @@ const Card1 = ({image,title, paragraph, date, cat, className, styles}) => {
             </div>
             <div className="space-y-7 px-5 pt-5">
                 <h2 className="group-hover:bg-neutral-700 duration-300 w-fit text-lg font-semibold">{title}</h2>
-                <p>{paragraph}</p>
-                {date || cat && <h5 className="text-sm">{date} | {cat}</h5>}
+                <p className="pb-5">{paragraph}</p>
+                {date || cat && <h5 className="text-xs">{date} | {cat}</h5>}
             </div>
         </Link>
      );

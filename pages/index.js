@@ -31,7 +31,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-gray2">
-        <Navbar/>
         <Hero/>
         <Spotlight className={"bg-gray1"} styles="border" img1={img11} img2={img30} img3={img31} mainTitle={"Spotlight "} btnName="See all aalto University news"/>
         <Spotlight className={"bg-gray2"} mainTitle={"Join our many events"} img1={img33} img2={img32} img3={img34}   btnName="See all events" />
@@ -40,7 +39,6 @@ export default function Home() {
         <Information />
         <Research />
         <Follow />
-        <Footer/>
       </main>
     </>
   )
