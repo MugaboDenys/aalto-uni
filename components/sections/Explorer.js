@@ -82,7 +82,7 @@ const Explorer = () => {
             </div>
             <div className="pt-10 md:px-32 px-5">
                 <BigCard image={img13} title={"Campus - lively and thriving"}  link={linksArr} paragraph="Aalto University's campus in Otaniemi is a renewable and living environment for research, art, learning, entrepreneurship and housing. The campus area inspires people to collaborate, try out new ideas and innovate together." />
-                <BigCard className={"flex-row-reverse pt-10"} image={img14} link="Visit the tour" title={"Virtual Campus Experience"}  paragraph="Explore Aalto University’s campus from anywhere in the world! Our digital guides, an Aalto University student and an assistant professor, introduce you to our learning facilities, laboratories, workshops, service spots and outdoor spaces. The tour can be experienced on desktop, mobile or VR headset. " />
+                <BigCard className={"flex-row-reverse pt-10"} image={img14} link={linksArr} title={"Virtual Campus Experience"}  paragraph="Explore Aalto University’s campus from anywhere in the world! Our digital guides, an Aalto University student and an assistant professor, introduce you to our learning facilities, laboratories, workshops, service spots and outdoor spaces. The tour can be experienced on desktop, mobile or VR headset. " />
             </div>
             <div className="md:px-32 pt-20 grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-2">
                 {[{image : img15, text : "Building Finland's first quantum computer. Photo: Aalto University" },
